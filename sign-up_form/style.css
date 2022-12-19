@@ -1,0 +1,178 @@
+:root {
+    --bkg_color: ;
+    --btn_color: ;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    display: flex;
+}
+
+aside, main {
+    height: 100vh;
+}
+
+aside {
+    width: 40vw;
+    background: url(./resources/bgk-1.png) center no-repeat  border-box;
+}
+
+.logo-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(2, 13, 24, 0.384);
+    margin-top: 20vh;
+}
+
+.logo-cont img {
+    height: 20vh;
+}
+
+.logo-cont h1 {
+    font-size: 4rem;
+    color: #edf6f9;
+}
+
+main {
+    background-color: #edf6f9;
+    width: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.form-title {
+    width: 100%;
+    font-size: 1.3rem;
+    color: #656c6e;
+}
+
+.title-cont {
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.title-cont p  {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #868e91;
+}
+
+.input-cont {
+    background-color: #ebfaff;
+    padding: 20px 0px 20px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 1px 2px 3px 0px rgba(110, 109, 109, 0.486);
+}
+
+.input-cont div {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+}
+
+.input-cont div label {
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+    color: #677478;
+}
+
+.input-cont input {
+    height: 15px;
+    border-radius: 3px;
+    border: 1px solid rgb(207, 206, 206);
+    background-color: #e9eaec9a;
+}
+
+.input-cont input:focus {
+    outline: solid .5px #2596be;
+}
+
+.input-cont label {
+    color: #1f2628;
+    padding-left: 2px;
+    text-transform: uppercase;
+}
+
+.btn-cont {
+    padding: 20px;
+}
+
+.btn-cont button {
+    background-color: #2596be;
+    border: none;
+    width: 150px;
+    height: 35px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+    color: #dafafa;
+    box-shadow: 0px 1px 5px 1px rgba(102, 102, 102, 0.582);
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-cont button:hover {
+    color: #2596be;
+    background-color: #dafafa;
+}
+
+.log-in {
+    padding-left: 20px;
+    padding-bottom: 50px;
+    color: #687073;
+}
+
+.log-in a {
+    color: #868e91;
+}
+
+@media screen and (max-width: 750px) {
+    .logo-cont h1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    aside {
+        display: none;
+    }
+    main {
+        width: 100%;
+    }
+    .input-cont {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-cont div {
+        width: 100%;
+    }
+
+    .input-cont div input {
+        width: 90%;
+    }
+}
